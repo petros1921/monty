@@ -1,5 +1,10 @@
 #include "monty.h"
-
+/**
+ * st_push - Push a value onto the stack or queue.
+ * @entry: Pointer to the entry point of the stack or queue.
+ * @shelf: Line number of the current command.
+ * By Kidus Yohannes and Petros Worku
+ */
 void st_push(stack_t **entry, unsigned int shelf)
 {
 	int value, index = 0, invalid = 0;

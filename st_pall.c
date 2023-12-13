@@ -1,5 +1,11 @@
 #include "monty.h"
 
+/**
+ * st_pall - Print all elements of a stack.
+ * @entry: Pointer to the entry point of the stack.
+ * @shelf: Unused parameter.
+ * By Kidus Yohannes and Petros Worku.
+ */
 void st_pall(stack_t **entry, unsigned int shelf)
 {
 	stack_t *node_pointer;

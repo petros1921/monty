@@ -1,5 +1,11 @@
 #include "monty.h"
 
+/**
+ * new_queue - Create a new node and enqueue it.
+ * @entry: Pointer to the entry point of the stack or queue.
+ * @value: Value to be stored in the new node.
+ * By Kidus Yohannes and Petros Worku.
+ */
 void new_queue(stack_t **entry, int value)
 {
 	stack_t *new_queue_node, *current_node;

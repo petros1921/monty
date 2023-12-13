@@ -1,5 +1,10 @@
 #include "monty.h"
 
+/**
+ * stack_remover - Remove all nodes from a stack.
+ * @entry: Pointer to the entry point of the stack.
+ *
+ */
 void stack_remover(stack_t *entry)
 {
 	stack_t *current_node;

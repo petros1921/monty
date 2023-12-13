@@ -1,5 +1,12 @@
 #include "monty.h"
 
+/**
+ * new_node - Create a new node and push it onto the stack.
+ * @entry: Pointer to the entry point of the stack.
+ * @value: Value to be stored in the new node.
+ * By Kidus Yohannes and Petros Worku.
+ */
+
 void new_node(stack_t **entry, int value)
 {
 	stack_t *new_node, *current_node;
