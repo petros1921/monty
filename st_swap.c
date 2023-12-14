@@ -23,6 +23,7 @@ void st_swap(stack_t **entry, unsigned int shelf)
 		fprintf(stderr, "L%d: cannot swap, stack is to short\n", shelf);
 		fclose(monty_con.file);
 		free(monty_con.file_content);
+		stack_remover(*entry);
 		exit(EXIT_FAILURE);
 	}
 
