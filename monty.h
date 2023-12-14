@@ -58,6 +58,15 @@ void execute_bytecode(char *content, stack_t **entry, unsigned int line_number, 
 char *read_file_content(FILE *file);
 void st_pop(stack_t **entry, unsigned int shelf); 
 void st_swap(stack_t **entry, unsigned int shelf);
+void st_add(stack_t **entry, unsigned int shelf); 
+void st_nop(stack_t **entry, unsigned int shelf); 
+void st_sub(stack_t **entry, unsigned int shelf); 
+void st_div_op(stack_t **entry, unsigned int shelf); 
+void st_mul(stack_t **entry, unsigned int shelf); 
+void st_mod(stack_t **entry, unsigned int shelf); 
+void st_pchar(stack_t **entry, unsigned int shelf); 
+void st_pstr(stack_t **entry, unsigned int shelf); 
+void st_rotl(stack_t **entry, unsigned int shelf);
 
 
 #endif
