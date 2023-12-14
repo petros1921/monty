@@ -1,6 +1,11 @@
 #include "monty.h"
 
-
+/**
+ * top_queue - Sets the stack behavior to queue (last-in, first-out).
+ * @entry: Pointer to the entry point of the stack.
+ * @shift: Unused parameter.
+ * By Kidus Yohannes and Petros Worku.
+ */
 void top_queue(stack_t **entry, unsigned int shift)
 {
 	(void)entry;

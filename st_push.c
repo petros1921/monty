@@ -16,8 +16,8 @@ void st_push(stack_t **entry, unsigned int shelf)
 
 		for (; monty_con.argument[index] != '\0'; index++)
 		{
-	if (monty_con.argument[index] > 57 || monty_con.argument[index] < 48)
-		invalid = 1;
+			if (monty_con.argument[index] > 57 || monty_con.argument[index] < 48)
+				invalid = 1;
 		}
 
 		if (invalid == 1)

@@ -1,5 +1,11 @@
 #include "monty.h"
 
+/**
+ * st_pint - Prints the value at the top of the stack.
+ * @entry: Pointer to the entry point of the stack.
+ * @shelf: Line number.
+ * BY Kidus Yohannes and Petros Worku.
+ */
 void st_pint(stack_t **entry, unsigned int shelf)
 {
 	if (*entry == NULL)
