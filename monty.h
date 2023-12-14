@@ -54,7 +54,8 @@ void st_push(stack_t **entry, unsigned int shelf);
 void stack_remover(stack_t *entry);
 void new_node(stack_t **entry, int value);
 void new_queue(stack_t **entry, int value);
-
+void execute_bytecode(stack_t **entry);
+char *read_file_content(FILE *file);
 
 
 #endif
