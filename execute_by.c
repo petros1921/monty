@@ -1,5 +1,10 @@
 #include "monty.h"
 
+/**
+ * execute_bytecode - Execute bytecode instructions.
+ * @entry: Pointer to the entry point of the stack.
+ * By Kidus Yohannes and Petros Worku.
+ */
 void execute_bytecode(stack_t **entry)
 {
 	char *token;

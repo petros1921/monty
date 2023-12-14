@@ -1,5 +1,10 @@
 #include "monty.h"
-
+/**
+ * read_file_content - Read the content of a file.
+ * @file: Pointer to the file to be read.
+ * Return: It returns the content string.
+ * By Kidus Yohannes and Petros Worku.
+ */
 char *read_file_content(FILE *file)
 {
 	size_t length;

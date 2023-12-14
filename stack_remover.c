@@ -3,7 +3,7 @@
 /**
  * stack_remover - Remove all nodes from a stack.
  * @entry: Pointer to the entry point of the stack.
- *
+ * By Kidus Yohannes and Petros Worku.
  */
 void stack_remover(stack_t *entry)
 {
