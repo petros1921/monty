@@ -13,6 +13,7 @@ int execute_bytecode(char *content, stack_t **entry, unsigned int line_number, F
 		{"push", st_push},
 		{"pall", st_pall},
 		{"pop", st_pop},
+		{"pint", st_pint},
 		{NULL, NULL}
 	};
 
