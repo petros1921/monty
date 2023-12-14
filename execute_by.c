@@ -7,7 +7,7 @@
  *
  */
 
-void execute_bytecode(char *content, stack_t **entry, unsigned int line_number, FILE *file)
+int execute_bytecode(char *content, stack_t **entry, unsigned int line_number, FILE *file)
 {
 	instruction_t instructions[] = {
 		{"push", st_push},
@@ -21,7 +21,7 @@ void execute_bytecode(char *content, stack_t **entry, unsigned int line_number, 
 
 	opcode = strtok(content, " \n\t");
 	if (opcode && opcode[0] == '#')
-		return;
+		return (0);
 
 	monty_con.argument = strtok(NULL, " \n\t");
 
@@ -30,7 +30,7 @@ void execute_bytecode(char *content, stack_t **entry, unsigned int line_number, 
 		if (strcmp(opcode, instructions[index].opcode) == 0)
 		{
 			instructions[index].f(entry, line_number);
-			return;
+			return (0);
 		}
 		index++;
 	}
@@ -43,4 +43,5 @@ void execute_bytecode(char *content, stack_t **entry, unsigned int line_number, 
 		stack_remover(*entry);
 		exit(EXIT_FAILURE);
 	}
+	return (1);
 }

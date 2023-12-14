@@ -16,14 +16,14 @@ void new_node(stack_t **entry, int value)
 	new_node = malloc(sizeof(stack_t));
 	if (new_node == NULL)
 	{
-		fprintf(stderr, "Error: Unable to allocate memory for a new node\n");
-		exit(EXIT_FAILURE);
+		printf("Error\n");
+		exit(0);
 
 	}
-	if (current_node != NULL)
-	{
+	if (current_node)
+
 		current_node->prev = new_node;
-	}
+
 
 	new_node->n = value;
 	new_node->next = *entry;

@@ -1,5 +1,13 @@
 #include "monty.h"
 
+
+void top_queue(stack_t **entry, unsigned int shift)
+{
+	(void)entry;
+	(void)shift;
+	monty_con.last_in_first_out = 1;
+}
+
 /**
  * new_queue - Create a new node and enqueue it.
  * @entry: Pointer to the entry point of the stack or queue.
@@ -15,8 +23,7 @@ void new_queue(stack_t **entry, int value)
 
 	if (new_queue_node == NULL)
 	{
-		fprintf(stderr, "Error: Unable to allocate memory for a new queue node\n");
-		exit(EXIT_FAILURE);
+		printf("Error\n");
 	}
 	new_queue_node->n = value;
 	new_queue_node->next = NULL;
