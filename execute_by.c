@@ -11,12 +11,21 @@
  */
 int execute_bytecode(char *content, stack_t **entry, unsigned int line_number, FILE *file)
 {
+
         instruction_t instructions[] = {
                 {"push", st_push},
                 {"pall", st_pall},
                 {"pop", st_pop},
                 {NULL, NULL}
         };
+
+	instruction_t instructions[] = {
+		{"push", st_push},
+		{"pall", st_pall},
+		{"pop", st_pop},
+		{"pint", st_pint},
+		{NULL, NULL}
+	};
 
         unsigned int index = 0;
         char *opcode;
