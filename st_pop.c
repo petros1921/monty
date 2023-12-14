@@ -14,9 +14,9 @@ void st_pop(stack_t **entry, unsigned int shelf)
 	if (*entry = NULL)
 	{
 		fprintf(stderr, "L%d: cannot pop an empty stack\n", shelf);
-		fclose(bus.file);
-		free(bus.content);
-		free_stack(*entry);
+		fclose(monty_con.file);
+		free(monty_con.file_content);
+		stack_remover(*entry);
 		exit(EXIT_FAILURE);
 	}
 
