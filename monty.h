@@ -8,6 +8,7 @@
 #include <fcntl.h>
 #include <string.h>
 #include <ctype.h>
+#include <sys/stat.h>
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -46,6 +47,7 @@ typedef struct MontyContext
     char *file_content;
     int last_in_first_out;
 } MontyContext_t;
+
 extern MontyContext_t monty_con;
 
 

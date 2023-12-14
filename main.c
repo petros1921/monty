@@ -1,4 +1,7 @@
+#define _POSIX_C_SOURCE 200809L
+
 #include "monty.h"
+#include <stdio.h>
 
 MontyContext_t monty_con = {NULL, NULL, NULL, 0};
 
