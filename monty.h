@@ -54,7 +54,7 @@ void st_push(stack_t **entry, unsigned int shelf);
 void stack_remover(stack_t *entry);
 void new_node(stack_t **entry, int value);
 void new_queue(stack_t **entry, int value);
-void execute_bytecode(stack_t **entry);
+void execute_bytecode(char *content, stack_t **entry, unsigned int line_number, FILE *file);
 char *read_file_content(FILE *file);
 void st_pop(stack_t **entry, unsigned int shelf); 
 void st_swap(stack_t **entry, unsigned int shelf);
